@@ -1,0 +1,84 @@
+REM ChromeBook Keyboard Key Sequence
+REM Part One: Wifi Setup 
+REM DEFAULTDELAY 500
+DELAY 1000
+ALT-SHIFT S
+DELAY 1000
+TAB
+TAB
+TAB
+TAB
+ENTER
+DELAY 1000
+TAB
+TAB
+TAB
+ENTER
+DELAY 1000
+REM Enter SSID on the following line
+STRING <username>
+DELAY 500
+TAB
+DELAY 500
+DOWN
+DOWN
+DELAY 500
+TAB
+DELAY 100
+REM Enter wifi password on the following line
+STRING <password>
+DELAY 500
+ENTER
+REM Long Pause while Connection is established.
+DELAY 5000
+ENTER
+DELAY 500
+ENTER
+DELAY 1500
+REM Part two: Google Terms of Service
+SHIFT TAB
+DELAY 50
+SHIFT TAB
+DELAY 50
+SHIFT TAB
+DELAY 50
+SHIFT TAB
+DELAY 50
+TAB
+DELAY 50
+TAB
+DELAY 50
+TAB
+DELAY 50
+TAB
+DELAY 50
+TAB
+DELAY 50
+TAB
+DELAY 50
+TAB
+DELAY 50
+TAB
+DELAY 50
+TAB
+DELAY 50
+ENTER
+REM Part Three: Enrollment
+DELAY 3500
+REM Enter enrollment username on the following line
+STRING <Chrome Enrollment Username>
+DELAY 500
+ENTER
+DELAY 1000
+REM Enter enrollment password on the following line
+STRING <Chrome Enrollment Password>
+DELAY 500
+ENTER
+REM Long Pause while device is enrolled.
+DELAY 8000
+TAB
+TAB
+TAB
+ENTER
+DELAY 500
+ENTER
