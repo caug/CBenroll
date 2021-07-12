@@ -1,8 +1,9 @@
 REM ChromeBook Keyboard Key Sequence
 REM Part One: Wifi Setup 
 REM DEFAULTDELAY 500
-REM Chromevox pops up about 15-16 secs after the Google chime sound
-DELAY 5000
+REM Chromevox pops up about 15-16 secs after the Google chime sound.
+REM Plug in Rubber Ducky after Chromevox pops up.
+DELAY 2000
 SHIFT TAB
 DELAY 500
 SHIFT TAB
@@ -22,9 +23,9 @@ TAB
 TAB
 TAB
 ENTER
-DELAY 1000
+DELAY 1500
 REM Enter SSID on the following line
-STRING <username>
+STRING <SSID name>
 DELAY 500
 TAB
 DELAY 500
@@ -39,11 +40,14 @@ DELAY 500
 ENTER
 REM Long Pause while Connection is established.
 DELAY 5000
+SHIFT TAB
 ENTER
 DELAY 500
 ENTER
 DELAY 1500
 REM Part two: Google Terms of Service
+TAB
+DELAY 50
 SHIFT TAB
 DELAY 50
 SHIFT TAB
@@ -51,28 +55,10 @@ DELAY 50
 SHIFT TAB
 DELAY 50
 SHIFT TAB
-DELAY 50
-TAB
-DELAY 50
-TAB
-DELAY 50
-TAB
-DELAY 50
-TAB
-DELAY 50
-TAB
-DELAY 50
-TAB
-DELAY 50
-TAB
-DELAY 50
-TAB
-DELAY 50
-TAB
 DELAY 50
 ENTER
 REM Part Three: Enrollment
-DELAY 3500
+DELAY 5000
 REM Enter enrollment username on the following line
 STRING <Chrome Enrollment Username>
 DELAY 500
@@ -83,8 +69,11 @@ STRING <Chrome Enrollment Password>
 DELAY 500
 ENTER
 REM Long Pause while device is enrolled.
-DELAY 8000
-TAB
+REM End here if you want to manually enter Asset ID and click through the end.
+REM Otherwise, long pauses to enter Asset ID and Location and automate continue.  
+REM Leave the cursor in the location box.
+DELAY 9000
+DELAY 9000
 TAB
 TAB
 ENTER
