@@ -1,6 +1,14 @@
 REM ChromeBook Keyboard Key Sequence
 REM Part One: Wifi Setup 
 REM DEFAULTDELAY 500
+REM Chromevox pops up about 15-16 secs after the Google chime sound
+DELAY 5000
+SHIFT TAB
+DELAY 500
+SHIFT TAB
+DELAY 500
+SPACE
+DELAY 500
 DELAY 1000
 ALT-SHIFT S
 DELAY 1000
